@@ -68,7 +68,8 @@ class BlogsController < ApplicationController
       @blog = Blog.friendly.find(params[:id])
     end
 
-    # Only allow a list of trusted parameters through.
+    # Never trust parameters from the scary internet.
+    # Only allow a list of trusted parameters through. (white list)
     def blog_params
       params.require(:blog).permit(:title, :body)
     end
