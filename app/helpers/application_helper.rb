@@ -10,9 +10,13 @@ module ApplicationHelper
   end
 
   def source_helper(layout_name)
-     if session[:source]
-      greeting = "Thanks for vising me from #{session[:source]} and you are on the #{layout_name} layout"
-      content_tag(:p, greeting, class: "source-greeting")
-     end
+    if session[:source]
+    greeting = "Thanks for vising me from #{session[:source]} and you are on the #{layout_name} layout"
+    content_tag(:p, greeting, class: "source-greeting")
+    end
+  end
+
+  def copyright_generator
+    SeanparkViewTool::Renderer.copyright 'Sean Park', 'All rights reserved'
   end
 end

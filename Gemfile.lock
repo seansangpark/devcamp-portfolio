@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/seansangpark/seanpark_view_tool
+  revision: cc41010fdf64dc62abecba6c39fa053d0146c49a
+  specs:
+    seanpark_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -211,6 +217,7 @@ DEPENDENCIES
   puma (~> 3.11)
   rails (~> 5.2.6)
   sass-rails (~> 5.0)
+  seanpark_view_tool!
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)
